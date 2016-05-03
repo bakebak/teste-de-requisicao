@@ -1,0 +1,30 @@
+{
+  "name": "bem-vindo",
+  "version": "1.0.0",
+  "description": "[![Logo DD](http://www.digitaldesk.com.br/content/images/logoDD.png)](http://www.digitaldesk.com.br/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digitaldesk-Labs/BemVindo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Digitaldesk-Labs/BemVindo/issues"
+  },
+  "homepage": "https://github.com/Digitaldesk-Labs/BemVindo#readme",
+  "dependencies": {
+    "selenium-webdriver": "^2.53.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rsync": "0.0.6",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-webserver": "^0.9.1",
+    "vinyl-ftp": "^0.4.5"
+  }
+}
