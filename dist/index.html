@@ -3,18 +3,18 @@
   <head>
     <title>Fruteira</title>
     <meta charset='utf-8'>
-    <link rel="stylesheet" href="brunoklein-style.css">
   </head>
-  <body id="fundo">
-    <div id="quadrocentral">
+  <body style="background-color:#4d4d33; margin:0 auto;">
+    <div style="margin:20px auto;padding: 10px;text-align:center;width:600px;min-height:400px;max-height:auto;background: #c2c2a3;border-radius:15px;">
       <form action="action_page.php">
-        <select name="cars">
-          <option value="banana">Banana</option>
-          <option value="morango">Morango</option>
-          <option value="abacaxi">Abacaxi</option>
-          <option value="bergamota">Bergamota</option>
-          <option value="maca">Maçã</option>
-        </select>
+        <input list="frutas" name="frutas">
+        <datalist id="frutas">
+          <option value="banana">
+          <option value="morango">
+          <option value="abacaxi">
+          <option value="bergamota">
+          <option value="manga">
+        </datalist>
         <input type="submit">
       </form>
     </div>
