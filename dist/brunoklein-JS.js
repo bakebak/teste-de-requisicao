@@ -1,14 +1,19 @@
 $(document).ready(function(){
 
 	$("#botao").click(function(){
-		$.getJSON("http://192.168.1.109:8080/list", function (data){
-			var entrada = $("#numero").val();
-			var saida = "";
-			saida = "Nome: " + data[entrada-1].nome + "<br>" +
-			"Valor: " + data[entrada-1].valor + "<br>" +
-			"Status: " + data[entrada-1].status + "<br>" +
-			"Estoque: " + data[entrada-1].estoque + "<br>";
-			$ ("#dados").html(saida);
-		})
+		var entrada = $("#numero").val();
+		if(entrada!=''){
+			$.getJSON("http://192.168.1.109:8080/product?chave="+entrada, function (data){
+				
+				var saida = "";
+				saida = "Nome: " + data.nome + "<br>" +
+				"Valor: " + data.valor + "<br>" +
+				"Status: " + data.status + "<br>" +
+				"Estoque: " + data.estoque + "<br>";
+				$ ("#dados").html(saida);
+			})
+		}else{
+			$ ("#dados").html(' ');
+		}	
 	})
 })
