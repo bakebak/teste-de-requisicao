@@ -1,0 +1,14 @@
+{
+  "produtos":
+    [
+      {"chave": 1,"nome": "banana","valor": 1.25,"status": "A","estoque": "45"},
+
+      {"chave": 2,"nome": "morango","valor": 5.5,"status": "A","estoque": "20"}
+
+      {"chave": 3,"nome": "abacaxi","valor": 3.75,"status": "A","estoque": "30"}
+
+      {"chave": 4,"nome": "bergamota","valor": 2.1,"status": "I","estoque": "15"}
+
+      {"chave": 5,"nome": "maca","valor": 4.5,"status": "I","estoque": "25"}
+    ]
+}
