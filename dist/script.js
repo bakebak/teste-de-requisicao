@@ -1,16 +1,15 @@
-function chamalista (){
+function chamaLista (){
 	$.getJSON("http://192.168.1.109:8080/list", function (list){
 		var lista = '';
 		var i;
 		for(i=0; i < list.length; i++){
 			lista += list[i].chave + " - " + list[i].nome +"<br>";
 		}
-		console.log(i);
 		$("#disponivel").html(lista);
 	})
 }
 
-function chamaindividual(tipo,entrada){
+function chamaIndividual(tipo,entrada){
 	$.getJSON("http://192.168.1.109:8080/product?"+tipo+"=" + entrada, function (data){ //.getJSON faz uma requisição e o que retornar ele transforma em JSON
 		var saida = "";
 		saida = "Fruta: " + data.nome + "<br>" +
@@ -29,14 +28,14 @@ $(document).ready(function(){
 		var entrada = $("#numero").val();
 		var type = isNaN(entrada); //isNaN -> testa se não é um número
 		if(type==false){
-			chamaindividual('chave',entrada );
+			chamaIndividual('chave',entrada);
 		}
 		else if(type==true){
-			chamaindividual('nome',entrada);
+			chamaIndividual('nome',entrada);
 		}
 	});
-	chamalista();
+	chamaLista();
 	$("#att").click(function(){
-		chamalista();
+		chamaLista();
 	});
 });
