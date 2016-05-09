@@ -4,7 +4,9 @@ body{text-align:center;}
 #bordacentral{display:inline-block;margin:20px auto;padding: 10px;text-align:center;width:600px;min-height:400px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
 #titulo{font-family:Comic Sans MS;;color:#2e2e1f;}
 #dados{font-size:30px;font-family:Comic Sans MS;margin-top:80px;color:#2e2e1f;}
-#lista{margin:20px auto;padding: 10px;text-align:center;width:100px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;float:right;}
+#lista{margin:20px auto;padding: 10px;text-align:center;width:150px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;float:right;margin-right: 15px;}
+#disponivel{font-family:Comic Sans MS;color:#2e2e1f;}
+#tituloDisponivel{font-family:Comic Sans MS;color:#2e2e1f;}
 }
 
 @media only screen and (min-width: 450px) and (max-width: 799px){
@@ -13,7 +15,9 @@ body{text-align:center;}
 #bordacentral{margin:20px auto;padding: 10px;text-align:center;width:400px;min-height:400px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
 #titulo{font-family:Comic Sans MS;;color:#2e2e1f;}
 #dados{font-size:30px;font-family:Comic Sans MS;margin-top:50px;color:#2e2e1f;}
-#lista{margin:20px auto;padding: 10px;text-align:center;width:100px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
+#lista{margin:20px auto;padding: 10px;text-align:center;width:150px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
+#disponivel{font-family:Comic Sans MS;color:#2e2e1f;}
+#tituloDisponivel{font-family:Comic Sans MS;color:#2e2e1f;}
 }
 
 @media only screen and (min-width: 100px) and (max-width: 449px){
@@ -22,5 +26,7 @@ body{text-align:center;}
 #bordacentral{margin:20px auto;padding: 10px;text-align:center;width:300px;min-height:300px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
 #titulo{font-family:Comic Sans MS;;color:#2e2e1f;}
 #dados{font-size:20px;font-family:Comic Sans MS;margin-top:30px;color:#2e2e1f;}
-#lista{margin:20px auto;padding: 10px;text-align:center;width:100px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
+#lista{margin:20px auto;padding: 10px;text-align:center;width:150px;min-height:50px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
+#disponivel{font-family:Comic Sans MS;color:#2e2e1f;}
+#tituloDisponivel{font-family:Comic Sans MS;color:#2e2e1f;}
 }
