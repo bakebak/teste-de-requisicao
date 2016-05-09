@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) and (max-width: 5500px){
+@media only screen and (min-width: 900px) and (max-width: 5500px){
 body{text-align:center;}
 #fundo{background-color:#4d4d33; margin:0 auto;}
 #bordacentral{display:inline-block;margin:20px auto;padding: 10px;text-align:center;width:600px;min-height:400px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}
@@ -9,7 +9,7 @@ body{text-align:center;}
 #tituloDisponivel{font-family:Comic Sans MS;color:#2e2e1f;}
 }
 
-@media only screen and (min-width: 450px) and (max-width: 799px){
+@media only screen and (min-width: 450px) and (max-width: 899px){
 body{text-align:center;}
 #fundo{background-color:#4d4d33; margin:0 auto;}
 #bordacentral{margin:20px auto;padding: 10px;text-align:center;width:400px;min-height:400px;max-height:auto;background: #c2c2a3;border-radius:15px;box-shadow:0 0 20px 5px #ffffff;}

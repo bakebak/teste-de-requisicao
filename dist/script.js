@@ -1,5 +1,7 @@
+var host = {urlList:"http://192.168.1.109:8080/list", urlProduct:"http://192.168.1.109:8080/product?"};
+
 function chamaLista (){
-	$.getJSON("http://192.168.1.109:8080/list", function (list){
+	$.getJSON(host["urlList"], function (list){
 		var lista = '';
 		var i;
 		for(i=0; i < list.length; i++){
@@ -10,17 +12,22 @@ function chamaLista (){
 }
 
 function chamaIndividual(tipo,entrada){
-	$.getJSON("http://192.168.1.109:8080/product?"+tipo+"=" + entrada, function (data){ //.getJSON faz uma requisição e o que retornar ele transforma em JSON
-		var saida = "";
-		saida = "Fruta: " + data.nome + "<br>" +
-		"Valor: R$ " + data.valor + "<br>" +
-		"Status: " + data.status + "<br>" +
-		"Estoque: " + data.estoque + "<br>";
-		$("#dados").html(saida);
+	entrada=entrada.toLowerCase()
+	$.getJSON(host["urlProduct"] + tipo + "=" + entrada, function (data){ //.getJSON faz uma requisição e o que retornar ele transforma em JSON
+		escrevendoSaida(data);
 	})
 	.fail(function() {
 	    $("#dados").html('Fruta não disponível!');
 	})
+}
+
+function escrevendoSaida (data){
+	var saida = "";
+	saida = "Fruta: " + data.nome + "<br>" +
+	"Valor: R$ " + data.valor + "<br>" +
+	"Status: " + data.status + "<br>" +
+	"Estoque: " + data.estoque + "<br>";
+	$("#dados").html(saida);
 }
 
 function tipoEntrada(){
@@ -36,7 +43,7 @@ function tipoEntrada(){
 
 $(document).ready(function(){
 	$("#botao").click(function(){
-	tipoEntrada();
+		tipoEntrada();
 	});
 	chamaLista();
 	$("#att").click(function(){
