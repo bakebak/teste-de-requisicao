@@ -23,16 +23,20 @@ function chamaIndividual(tipo,entrada){
 	})
 }
 
+function tipoEntrada(){
+	var entrada = $("#numero").val();
+	var type = isNaN(entrada); //isNaN -> testa se não é um número
+	if(type==false){
+		chamaIndividual('chave',entrada);
+	}
+	else if(type==true){
+		chamaIndividual('nome',entrada);
+	}
+}
+
 $(document).ready(function(){
 	$("#botao").click(function(){
-		var entrada = $("#numero").val();
-		var type = isNaN(entrada); //isNaN -> testa se não é um número
-		if(type==false){
-			chamaIndividual('chave',entrada);
-		}
-		else if(type==true){
-			chamaIndividual('nome',entrada);
-		}
+	tipoEntrada();
 	});
 	chamaLista();
 	$("#att").click(function(){
