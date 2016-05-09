@@ -1,13 +1,13 @@
 function chamalista (){
 	$.getJSON("http://192.168.1.109:8080/list", function (list){
-			var lista = '';
-			var i;
-			for(i=0; i < list.length; i++){
-				lista += list[i].chave + " - " + list[i].nome +"<br>";
-			}
-			console.log(i);
-			$("#disponivel").html(lista);
-		})
+		var lista = '';
+		var i;
+		for(i=0; i < list.length; i++){
+			lista += list[i].chave + " - " + list[i].nome +"<br>";
+		}
+		console.log(i);
+		$("#disponivel").html(lista);
+	})
 }
 
 function chamaindividual(tipo,entrada){
